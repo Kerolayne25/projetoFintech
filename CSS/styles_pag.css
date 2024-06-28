@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    background-image: url('/Fintech/IMG/KeroMoney\ -\ FundoPadrao.jpg'); /* Substitua pelo caminho da sua imagem de fundo */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: black; /* Altera a cor do texto para preto */
+  }
+  .sidebar {
+    min-width: 200px;
+    max-width: 200px;
+    height: 100vh;
+    background: linear-gradient(to bottom, #9C7EF8, #420D86);
+    padding-top: 20px;
+    position: fixed;
+    color: white;
+    text-align: left; /* Alinha o texto à esquerda */
+    border-top-right-radius: 20px; /* Arredonda o canto superior direito */
+    border-bottom-right-radius: 20px; /* Arredonda o canto inferior direito */
+  }
+  .sidebar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .sidebar a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+  }
+  .sidebar a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .sidebar a .fas {
+    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+  }
+  .content {
+    margin-left: 200px;
+    padding: 20px;
+    width: 100%;
+  }
+  .back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #9C7EF8;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+  }
+  .back-to-top:hover {
+    background-color: #420D86;
+  }
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white; /* Altera a cor do cabeçalho para branco */
+    color: black; /* Altera a cor do texto para preto */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra leve */
+  }
+  .header-top .user-info {
+    display: flex;
+    align-items: center;
+  }
+  .header-top .user-info .fas {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  #calendario {
+    width: 40px; /* Ajusta o tamanho do ícone */
+    height: 40px;
+    background-color: #f0f0f0; /* Cor de fundo do ícone */
+    border-radius: 50%; /* Arredonda todos os cantos */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+  }
+  #calendario i {
+    font-size: 20px;
+    color: #555; /* Cor do ícone de calendário */
+  }

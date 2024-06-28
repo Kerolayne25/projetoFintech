@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('/Fintech/IMG/KeroMoney\ -\ Capa.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    color: white; /* Ajustar a cor do texto para ser legível sobre a imagem de fundo */
+  }
+  .content {
+    margin-left: 5%;
+  }
+  .btn-custom {
+    width: 120px; /* Define a largura dos botões */
+  }
+  .modal-content {
+    color: black; /* Define a cor do texto no modal */
+  }
