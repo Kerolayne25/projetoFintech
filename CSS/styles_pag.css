@@ -1,6 +1,6 @@
 body {
     display: flex;
-    background-image: url('/Fintech/IMG/KeroMoney\ -\ FundoPadrao.jpg'); /* Substitua pelo caminho da sua imagem de fundo */
+    background-image: url('/IMG/KeroMoney_FundoPadrao.jpg'); /* Substitua pelo caminho da sua imagem de fundo */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
