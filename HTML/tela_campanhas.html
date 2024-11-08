@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início</title>
+    
+    <!-- Importando o CSS do Bootstrap via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    
+    <!-- Link para o arquivo CSS unificado e de menu -->
+    <link rel="stylesheet" href="../css/styles.css"> <!-- Certifique-se de que o caminho está correto -->
+
+    <!-- Importando Chart.js para gráficos -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="campanhas"> <!-- Classe login para reutilizar o fundo -->
+
+    <!-- Div Principal -->
+    <div class="d-flex conteudo-principal-fundo">
+        <!-- Menu Lateral -->
+        <div class="menu-lateral">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="tela_inicio.html">
+                        <img src="../img/icones/Icon_InicioVermelho.png" alt="Início" class="icon-menu">
+                        <span>Início</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tela_vendas.html">
+                        <img src="../img/icones/Icon_VendasVermelho.png" alt="Vendas" class="icon-menu">
+                        <span>Vendas</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tela_produtos.html">
+                        <img src="../img/icones/Icon_ProdutosVermelho.png" alt="Produtos" class="icon-menu">
+                        <span>Produtos</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link item-menu-selecionado-campanha" href="tela_campanhas.html">
+                        <img src="../img/icones/Icon_CampanhasBranco.png" alt="Campanhas" class="icon-menu" width="100">
+                        <span>Campanhas</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tela_perfil.html">
+                        <img src="../img/icones/Icon_PerfilVermelho.png" alt="Perfil" class="icon-menu">
+                        <span>Perfil</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Conteúdo principal -->
+        <!-- Histórico de Campanhas -->
+
+        <div class="header-vendas">
+            <h1>Campanhas</h1>
+        </div>
+
+        <div class="bloco-campanhas">
+            <h2>Histórico de Campanhas</h2>
+            <div class="linha-horizontal"></div>
+            
+            <div class="campanha">
+                <div class="campanha-info">
+                    <p><strong>Campanha 1</strong></p>
+                    <p>Início em 17/06/2024 às 08:00</p>
+                    <p>Finalizado em 17/06/2024 às 18:00</p>
+                </div>
+                <div class="campanha-valor">
+                    <p>R$ 378,00</p>
+                    <div class="campanha-status ativa">Ativa</div>
+                </div>
+                <!-- Ícone de seta -->
+                <div class="icon-seta">
+                    <i class="bi bi-arrow-right-circle-fill fs-3 icon-seta-pedido" style="cursor: pointer;"></i> <!-- Ícone de seta -->
+                </div>
+            </div>
+
+            <div class="campanha">
+                <div class="campanha-info">
+                    <p><strong>Campanha Junina</strong></p>
+                    <p>Criado em 17/06/2024 às 18:10</p>
+                    <p>Concluído em 17/06/2024 às 18:34</p>
+                </div>
+                <div class="campanha-valor">
+                    <p>R$ 49,99</p>
+                    <div class="campanha-status pausada">Pausada</div>
+                </div>
+                <!-- Ícone de seta -->
+                <div class="icon-seta">
+                    <i class="bi bi-arrow-right-circle-fill fs-3 icon-seta-pedido" style="cursor: pointer;"></i> <!-- Ícone de seta -->
+                </div>
+            </div>
+
+            <div class="campanha">
+                <div class="campanha-info">
+                    <p><strong>Campanha Mês</strong></p>
+                    <p>Criado em 17/06/2024 às 18:10</p>
+                    <p>Concluído em 17/06/2024 às 18:34</p>
+                </div>
+                <div class="campanha-valor">
+                    <p>R$ 105,40</p>
+                    <div class="campanha-status ativa">Ativa</div>
+                </div>
+                <!-- Ícone de seta -->
+                <div class="icon-seta">
+                    <i class="bi bi-arrow-right-circle-fill fs-3 icon-seta-pedido" style="cursor: pointer;"></i> <!-- Ícone de seta -->
+                </div>
+            </div>
+
+            <div class="campanha">
+                <div class="campanha-info">
+                    <p><strong>Campanha Feriado</strong></p>
+                    <p>Criado em 17/06/2024 às 18:10</p>
+                    <p>Concluído em 17/06/2024 às 18:34</p>
+                </div>
+                <div class="campanha-valor">
+                    <p>R$ 54,90</p>
+                    <div class="campanha-status inativa">Inativa</div>
+                </div>
+                <!-- Ícone de seta -->
+                <div class="icon-seta">
+                    <i class="bi bi-arrow-right-circle-fill fs-3 icon-seta-pedido" style="cursor: pointer;"></i> <!-- Ícone de seta -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Contadores de Campanhas -->
+        <div class="contadores-campanhas">
+            <div class="bloco-contador">
+                <p>Ativas</p>
+                <h2>2</h2>
+            </div>
+            <div class="bloco-contador">
+                <p>Pausadas</p>
+                <h2>1</h2>
+            </div>
+            <div class="bloco-contador">
+                <p>Inativas</p>
+                <h2>15</h2>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- Referenciando o arquivo JS personalizado -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/actions.js"></script>
+</body>
+</html>

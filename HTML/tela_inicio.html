@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início</title>
+    
+    <!-- Importando o CSS do Bootstrap via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Link para o arquivo CSS unificado e de menu -->
+    <link rel="stylesheet" href="../css/styles.css"> <!-- Certifique-se de que o caminho está correto -->
+
+    <!-- Importando Chart.js para gráficos -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="inicio"> <!-- Classe login para reutilizar o fundo -->
+
+    <!-- Div Principal -->
+    <div class="d-flex conteudo-principal-fundo">
+        <!-- Menu Lateral -->
+        <div class="menu-lateral">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link item-menu-selecionado" href="tela_inicio.html">
+                        <img src="../img/icones/Icon_InicioBranco.png" alt="Início" class="icon-menu">
+                        <span>Início</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tela_vendas.html">
+                        <img src="../img/icones/Icon_VendasVermelho.png" alt="Vendas" class="icon-menu">
+                        <span>Vendas</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tela_produtos.html">
+                        <img src="../img/icones/Icon_ProdutosVermelho.png" alt="Produtos" class="icon-menu">
+                        <span>Produtos</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tela_campanhas.html">
+                        <img src="../img/icones/Icon_CampanhasVermelho.png" alt="Campanhas" class="icon-menu">
+                        <span>Campanhas</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tela_perfil.html">
+                        <img src="../img/icones/Icon_PerfilVermelho.png" alt="Perfil" class="icon-menu">
+                        <span>Perfil</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Conteúdo principal -->
+        <div class="container-xl conteudo-principal">
+            <!-- Div para Informações do Usuário e Calendário -->
+            <div class="row mt-2 flex-grow-1">
+                <div class="col-md-12">
+                    <div class="d-flex justify-content-between bloco-conteudo bloco-infos-usuarios">
+                        <div>
+                            <span id="dataAtual"></span>
+                        </div>
+                        <div>
+                            <span>Bem Vindo(a) <strong>Kerolayne Loiola</strong></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Div para Saldo -->
+            <div class="row mt-4 flex-grow-1">
+                <div class="col-md-12">
+                    <div class="bloco-conteudo bloco-saldo">
+                        <div class="card-body">
+                            <h3>Seu Saldo</h3>
+                            <h1>R$ 3.115,84</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Div para Gráficos de Vendas e Custos -->
+            <div class="row mt-4 flex-grow-1">
+                <div class="col-md-6">
+                    <div class="bloco-conteudo bloco-grafico">
+                        <div class="card-header text-center">Vendas</div>
+                        <div class="card-body">
+                            <canvas id="graficoVendas"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="bloco-conteudo bloco-grafico">
+                        <div class="card-header text-center">Custos</div>
+                        <div class="card-body">
+                            <canvas id="graficoCustos"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Div para Campanhas Ativas -->
+            <div class="row mt-4 flex-grow-1">
+                <div class="col-md-12">
+                    <div class="bloco-conteudo bloco-campanhas-inicio">
+                        <div class="card-header">Campanhas Ativas</div>
+                        <div id="campanhasCarrossel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner bloco-campanhas-inicio-designer">
+                                <div class="carousel-item active">
+                                    <div class="d-flex justify-content-around text-center bloco-campanhas-inicio-designer-conteudo-fundo">
+                                        <div class="bloco-campanhas-inicio-designer-conteudo">
+                                            <img src="../img/Icones/Icon_Cifrao.png" alt="Dinheiro" class="espacamento-conteudo-inicio">
+                                            <h1 class="espacamento-conteudo-inicio">R$ 2.500,00</h1>
+                                            <h2 class="espacamento-conteudo-inicio">Campanha Junina</h2>
+                                        </div>
+                                        <div class="bloco-campanhas-inicio-designer-conteudo">
+                                            <img src="../img/Icones/Icon_Cifrao.png" alt="Dinheiro" class="espacamento-conteudo-inicio">
+                                            <h1 class="espacamento-conteudo-inicio">R$ 1.000,00</h1>
+                                            <h2>Campanha Mês</h2>
+                                        </div>
+                                        <div class="bloco-campanhas-inicio-designer-conteudo">
+                                            <img src="../img/Icones/Icon_Cifrao.png" alt="Dinheiro" class="espacamento-conteudo-inicio">
+                                            <h1 class="espacamento-conteudo-inicio">R$ 500,00</h1>
+                                            <h2 class="espacamento-conteudo-inicio">Campanha Feriado</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-flex justify-content-around text-center bloco-campanhas-inicio-designer-conteudo-fundo">
+                                        <div class="bloco-campanhas-inicio-designer-conteudo">
+                                            <img src="../img/Icones/Icon_Cifrao.png" alt="Dinheiro" class="espacamento-conteudo-inicio">
+                                            <h1 class="espacamento-conteudo-inicio">R$ 2.500,00</h1>
+                                            <h2 class="espacamento-conteudo-inicio">Campanha Natal</h2>
+                                        </div>
+                                        <div class="bloco-campanhas-inicio-designer-conteudo">
+                                            <img src="../img/Icones/Icon_Cifrao.png" alt="Dinheiro" class="espacamento-conteudo-inicio">
+                                            <h1 class="espacamento-conteudo-inicio">R$ 3.000,00</h1>
+                                            <h2 class="espacamento-conteudo-inicio">Campanha Verão</h2>
+                                        </div>
+                                        <div class="bloco-campanhas-inicio-designer-conteudo">
+                                            <img src="../img/Icones/Icon_Cifrao.png" alt="Dinheiro" class="espacamento-conteudo-inicio">
+                                            <h1 class="espacamento-conteudo-inicio">R$ 1.200,00</h1>
+                                            <h2 class="espacamento-conteudo-inicio">Campanha Black Friday</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Botões de navegação com setas vermelhas -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#campanhasCarrossel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon seta-vermelha" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#campanhasCarrossel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon seta-vermelha" aria-hidden="true"></span>
+                                <span class="visually-hidden">Próximo</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Div para Botões Criar Campanha e Adicionar Produto -->
+            <div class="row mt-4 flex-grow-1">
+                <div class="col-md-12 text-rigth">
+                    <button class="btn btn-custom-secundario">Criar Campanha</button>
+                    <button class="btn btn-custom-secundario">Adicionar Produto</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Referenciando o arquivo JS personalizado -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/actions.js"></script>
+</body>
+</html>

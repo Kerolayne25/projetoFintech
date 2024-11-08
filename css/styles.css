@@ -1,0 +1,1026 @@
+/* ================= CONFIGURAÇÕES GLOBAIS ================= */
+
+/* Definir variáveis de cor para uso geral */
+:root {
+    
+    /* Cores do Site */
+        /* Cores dos Conteúdos */
+            /* Cores */
+            --cor-fundo: #d60000; /* Vermelho iFood */
+            /* Imagens */
+            --imagem-fundo-capa: url('../img/Fundo_Capa.png');
+            --imagem-fundo_telas_iniciais: url('../img/Fundo_TelasIniciais.png');
+            --imagem-fundo-telas-conteudos: url('../img/Fundo_TelasConteudos.png');
+            --imagem-fundo-telas-conteudos-2: url('../img/Fundo_TelaConteudos2.png');
+            /* FIM - Fundos das Telas */
+
+            /* Cores de Textos */
+            --cor-texto-branco: white; /* Texto Branco */
+            --cor-texto-vermelho:#ff0000; /* Texto Vermelho */
+            --cor-texto-preto: black; /* Texto Preto */
+            --cor-texto-verde: #1C5900; /* Texto Verde */
+            --cor-texto-azul: #002de3; /* Texto Azul */
+            /* FIM - Cores de Textos */
+
+            /* Cores dos Botôes */
+            --cor-botao-fundo_cinza_claro: #e5e5e5; /* Fundo cinza claro dos botões */
+            --cor-botao-fundo_branco: white; /* Fundo cinza claro dos botões */
+            --cor-botao-fundo_vermelho: #ff0000; /* Fundo cinza claro dos botões */
+            --cor-botao-fundo_azul_claro: #5699FE; /* Fundo cinza claro dos botões */
+            --cor-botao-fundo_verde_claro: #00A811; /* Fundo cinza claro dos botões */
+            --cor-botao-fundo_preto: black; /* Fundo cinza claro dos botões */
+
+            --cor-botao-texto_preto: black; /* Texto preto dos botões */
+            --cor-botao-texto_branco: white; /* Texto preto dos botões */
+            --cor-botao-texto_vermelho: #d60000; /* Texto preto dos botões */ 
+
+            --cor-botao-hover_cinza_escuro: #b3b3b3; /* Cor de fundo dos botões ao passar o mouse */
+            --cor-botao-hover_vermelho_escuro: #970000; /* Cor de fundo dos botões ao passar o mouse */
+            --cor-botao-hover_azul_escuro: #0059AB; /* Cor de fundo dos botões ao passar o mouse */
+            --cor-botao-hover_verde_escuro: #1C5900; /* Cor de fundo dos botões ao passar o mouse */
+            /* FIM - Cores dos Botôes */
+            
+            /* Cores dos Conteúdos */
+            --cor-fundo-conteudos_branco: white; /* Cor de fundo de alguns conteudos nas telas */
+            --cor-fundo-conteudos_vermelho: #d60000; /* Cor de fundo de alguns conteudos nas telas */
+            --cor-fundo-conteudos_preto: black; /* Cor de fundo de alguns conteudos nas telas */
+            --cor-fundo-conteudos_vermelho_claro:  rgba(255, 0, 0, 0.1);
+
+            /* Elementos de Imagem */
+            --imagem-seta-vermelha: url('../img/Elemento_Seta_Vermelha.png');
+
+            /* Icones de Imagem */
+            --imagem-icone-inicio_branco: url('../img/Icones/Icon_InicioBranco.png');
+            --imagem-icone-inicio_vermelho: url('../img/Icones/Icon_InicioVermelho.png');
+            --imagem-icone-vendas_branco: url('../img/Icones/Icon_VendasBranco.png');
+            --imagem-icone-vendas_vermelho: url('../img/Icones/Icon_VendasVermelho.png');
+            --imagem-icone-produtos_branco: url('../img/Icones/Icon_ProdutosBranco.png');
+            --imagem-icone-produtos_vermelho: url('../img/Icones/Icon_ProdutosVermelho.png');
+            --imagem-icone-campanhas_branco: url('../img/Icones/Icon_CampanhasBranco.png');
+            --imagem-icone-campanhas_vermelho: url('../img/Icones/Icon_CampanhasVermelho.png');
+            --imagem-icone-perfil_branco: url('../img/Icones/Icon_PerfilBranco.png');
+            --imagem-icone-perfil_vermelho: url('../img/Icones/Icon_PerfilVermelho.png');
+
+        /* FIM - Cores dos Conteúdos */
+
+        /* Cores do Menu */
+            /* Cores Menu */
+            --cor-fundo-menu: white; /* Fundo do menu lateral */
+
+            /* Cores Fundo Botão */
+            --cor-fundo-item-selecionado: #d60000; /* Fundo do item ativo no menu */
+            --cor-fundo-item-nao-seleciona: white; /* Fundo do item ativo no menu */
+            --cor-hover-fundo-item-nao-selecionado: rgb(250, 225, 225); /* Fundo do item ativo no menu */           
+
+            /* Cores dos Textos */
+            --cor-texto-item-selecionado: white; /* Texto do item ativo no menu */
+            --cor-texto-item-nao-seleciona: rgb(70, 70, 70); /* Texto padrão dos itens de menu */
+
+            /* Cores de Bordas e Sombras */
+            --cor-borda-menu: #e0e0e0; /* Borda do menu lateral */
+            --cor-sombra-menu: rgba(0, 0, 0, 0.1); /* Sombra do menu lateral */
+        /* FIM - Cores do Menu */
+
+        /* Fontes */
+            --fonte-inter: 'Inter', sans-serif;
+            --fonte-inknut: 'Inknut Antiqua', serif;
+
+        /* FIM - Fontes */
+
+    /* FIM - Cores do Site */
+
+}
+
+/* Importar fontes personalizadas usadas em várias páginas */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Estilo geral do corpo da página */
+body {
+    font-family: var(--fonte-inter); /* Usar a fonte global Inter */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilo para botões usados globalmente */
+.btn-custom {
+    background-color: var(--cor-botao-fundo_cinza_claro);
+    color: var(--cor-botao-texto_preto);
+    border-radius: 30px;
+    font-size: 1.2em;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.btn-custom:hover {
+    background-color: var(--cor-botao-hover_cinza_escuro);
+}
+
+/* Estilo para botões secundários */
+.btn-custom-secundario {
+    background-color: var(--cor-botao-fundo_vermelho);
+    color: var(--cor-botao-texto_branco);
+    border-radius: 30px;
+    box-shadow: 0 2px 10px var(--cor-sombra-menu); /* Sombra do menu lateral */
+    font-size: 15px;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.btn-custom-secundario:hover {
+    background-color: var(--cor-botao-hover_vermelho_escuro);
+    color: var(--cor-texto-branco);
+}
+
+.p {
+    color: var(--cor-texto); /* Cor de texto branca */
+}
+
+/* ================= CONFIGURAÇÕES INDIVIDUAIS DO MENU ================= */
+
+ /* Estilo geral do menu lateral */
+ .menu-lateral {
+    height: 100%;
+    padding-top: 20px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-right: 1px solid var(--cor-borda-menu); /* Borda do menu lateral */
+    box-shadow: 0 2px 10px var(--cor-sombra-menu); /* Sombra do menu lateral */
+    background-color: var(--cor-fundo-menu);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* Estilo dos itens do menu */
+.menu-lateral ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-lateral ul li a {
+    margin-bottom: 30px;
+    text-align: center;
+    border-radius: 100%;
+    height: 80px;
+    display: block;
+    text-decoration: none;
+}
+
+/* Configurações do Item Selecionado - Fundos e Tamanhos */
+.menu-lateral a.item-menu-selecionado {
+    background-color: var(--cor-fundo-item-selecionado); /* Fundo do item ativo */
+    padding: 5px;
+}
+
+.menu-lateral a.item-menu-selecionado-campanha {
+    background-color: var(--cor-fundo-item-selecionado); /* Fundo do item ativo */
+}
+
+.menu-lateral a.item-menu-selecionado-campanha span{
+    color: var(--cor-texto-item-selecionado); /* Cor do texto abaixo do ícone ativo */
+}
+
+.menu-lateral a.item-menu-selecionado-campanha:hover{
+    background-color: var(--cor-fundo-item-selecionado); /* Fundo do item selecionado */
+}
+
+
+
+/* Configurações do Item Selecionado - Texto */
+.menu-lateral a.item-menu-selecionado span {
+    color: var(--cor-texto-item-selecionado); /* Cor do texto abaixo do ícone ativo */
+}
+
+/* Configurações dos Itens não Selecionados */
+.menu-lateral a span {
+    display: block;
+    font-size: 9px;
+    color: var(--cor-texto-item-nao-seleciona); /* Cor do texto abaixo dos ícones */
+}
+
+/* Configurações dos Itens não Selecionados - Quando o mouse passa por cima do Item */
+.menu-lateral a.item-menu-selecionado:hover{
+    background-color: var(--cor-fundo-item-selecionado); /* Fundo do item selecionado */
+}
+
+.menu-lateral a:hover{
+    background-color: var(--cor-hover-fundo-item-nao-selecionado); /* Fundo do item selecionado */
+}
+
+/* Estilo dos ícones */
+.icon-menu {
+    display: block;
+    margin: 7px auto 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.icon-menu-inicio-branco {
+    background-image: var(--imagem-icone-inicio_branco);
+}
+
+.icon-menu-inicio-vermelho {
+    background-image: var(--imagem-icone-inicio_vermelho);
+}
+
+.icon-menu-vendas-branco {
+    background-image: var(--imagem-icone-vendas_branco);
+}
+
+.icon-menu-vendas-vermelho {
+    background-image: var(--imagem-icone-vendas_vermelho);
+}
+
+.icon-menu-produtos-branco {
+    background-image: var(--imagem-icone-produtos_branco);
+}
+
+.icon-menu-produtos-vermelho {
+    background-image: var(--imagem-icone-produtos_vermelho);
+}
+
+.icon-menu-campanhas-branco {
+    background-image: var(--imagem-icone-campanhas_branco);
+}
+
+.icon-menu-campanhas-vermelho {
+    background-image: var(--imagem-icone-campanhas_vermelho);
+}
+
+.icon-menu-perfil-branco {
+    background-image: var(--imagem-icone-perfil_branco);
+}
+
+.icon-menu-perfil-vermelho {
+    background-image: var(--imagem-icone-perfil-vermelho);
+}
+
+/* ================= FIM - CONFIGURAÇÕES INDIVIDUAIS DO MENU ================= */
+
+
+/* ================= CONFIGURAÇÕES INDIVIDUAIS DA TELA INDEX ================= */
+
+body.index {
+    color: var(--cor-texto-branco); /* Cor de texto branca */
+    background-image: var(--imagem-fundo-capa); /* Usando a variável da imagem de fundo para a tela inicial */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Estilo do container principal da tela de apresentação */
+.tela-apresentacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 50px;
+    height: 100%;
+}
+
+/* Estilo do título na tela principal */
+.titulo h1 {
+    font-family: 'Parceiros', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Estilo do logo do iFood na tela principal */
+.logo-ifood {
+    width: 150px;
+    margin-bottom: 30px;
+}
+
+/* ================= FIM - CONFIGURAÇÕES INDIVIDUAIS DA TELA INDEX ================= */
+
+/* ================= CONFIGURAÇÕES INDIVIDUAIS DA TELA DE LOGIN E REGISTRAR ================= */
+
+body.login {
+    color: var(--cor-texto-preto); /* Cor de texto branca */
+    background-image: var(--imagem-fundo_telas_iniciais); /* Imagem de fundo específica para a tela de login */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Estilo do container de login */
+.tela-login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilo da caixa de login */
+.caixa-login {
+    background-color: white;
+    border: 2px solid var(--cor-botao-hover_cinza_escuro); /* Usando a cor hover como borda */
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+/* Estilo dos campos de entrada de e-mail e senha */
+.campo-entrada {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px solid var(--cor-botao-hover_cinza_escuro);
+}
+
+/* Estilo do texto "Acesse com" na tela de login */
+.acesso-com {
+    margin-bottom: 15px;
+    color: var(--cor-texto);
+}
+
+/* Estilo para ícones de acesso */
+.icones-acesso {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Estilo dos ícones individuais */
+.icone-google,
+.icone-facebook {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+/* ================= FIM - CONFIGURAÇÕES INDIVIDUAIS DA TELA DE LOGIN E REGISTRAR ================= */
+
+/* ================= CONFIGURAÇÕES INDIVIDUAIS DA TELA DE INICIO ================= */
+
+body.inicio {
+    color: var(--cor-texto-preto); /* Cor de texto branca */
+    background-image: var(--imagem-fundo-telas-conteudos); /* Imagem de fundo específica para a tela de login */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Configuração do conteúdo principal para ocupar toda a tela */
+.conteudo-principal-fundo {
+    flex-direction: column;
+    height: 100%;
+    width: 80%;
+
+}
+
+/* Configuração do conteúdo principal para ocupar toda a tela */
+.conteudo-principal {
+    flex-direction: column;
+}
+
+/* Flex grow nos elementos para que se adaptem ao espaço disponível */
+.flex-grow-1 {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo geral para os blocos de conteúdo */
+.bloco-conteudo {
+    background-color: white; /* Fundo branco */
+    border-radius: 20px; /* Cantos arredondados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    height: 100%;
+}
+
+.bloco-infos-usuarios{
+    padding: 15px 10px;
+}
+
+.bloco-saldo {
+    color: var(--cor-texto-branco);
+    background-color: var(--cor-fundo-conteudos_vermelho);
+    text-align: center;
+}
+
+.bloco-grafico{
+    height: 100%; /* Ocupa a altura disponível */
+}
+
+/* Ajuste das alturas dos gráficos e blocos */
+#graficoVendas, #graficoCustos {
+    width: 100%;
+    height: 100%; /* Ajuste da altura dos gráficos para ocupar a área */
+}
+
+
+.bloco-conteudo h1 {
+    font-size: 2.5rem;
+}
+
+
+
+/* Ajuste blocos de Campanhas */
+.bloco-campanhas-inicio {
+    text-align: center;
+    height: 200px; /* Ocupa a altura disponível */
+}
+
+.bloco-campanhas-inicio-designer {
+    padding: 10px 0px;
+}
+
+.bloco-campanhas-inicio-designer-conteudo-fundo {
+    height: 100%;
+}
+
+.bloco-campanhas-inicio-designer-conteudo {
+    border-radius: 50%; /* Cantos arredondados */
+    background-color: var(--cor-fundo-conteudos_vermelho_claro); /* Fundo vermelho claro */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Sombra suave */
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.espacamento-conteudo-inicio{
+    margin-bottom: 3px;
+}
+
+.bloco-campanhas-inicio-designer-conteudo img{
+    width: 30px;
+    height: 30px;
+}
+
+.bloco-campanhas-inicio-designer-conteudo h1 {
+    font-size: 16px;
+    color: var(--cor-texto-preto); /* Cor do texto */
+}
+
+.bloco-campanhas-inicio-designer-conteudo h2{
+    font-size: 12px;
+    color: var(--cor-texto-vermelho); /* Cor do nome da campanha */
+    margin: 0;
+}
+
+/* Setas de navegação vermelhas */
+.carousel-control-prev,
+.carousel-control-next{
+    width: 7%;
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.seta-vermelha {
+    background-image: var(--imagem-seta-vermelha);
+    padding: 5px;
+}
+
+/* Estilos para setas */
+.carousel-control-prev-icon {
+    transform: rotate(180deg); /* Rotaciona para criar a seta de voltar */
+}
+
+.carousel-control-next-icon {
+    transform: rotate(360deg); /* Rotaciona para criar a seta de avançar */
+}
+
+/* FIM - Ajuste blocos de Campanhas */
+
+
+/* Ajustes Botões Criar Campanha e Adicionar Produto */
+.text-rigth{
+    text-align: right !important
+}
+
+
+
+/* =================  FIM - CONFIGURAÇÕES INDIVIDUAIS DA TELA DE INICIO ================= */
+
+/* ================= CONFIGURAÇÕES INDIVIDUAIS DA TELA VENDAS ================= */
+
+body.vendas {
+    color: var(--cor-texto-branco); /* Cor de texto branca */
+    background-image: var(--imagem-fundo-telas-conteudos-2); /* Usando a variável da imagem de fundo para a tela inicial */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Estilo da Página de Vendas */
+
+.container-vendas {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-vendas h1 {
+    color: var(--cor-texto-branco);
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.blocos-vendas {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.bloco {
+    border-radius: 20px;
+    padding: 20px 5px;
+    width: 49%;
+    height: 80%;
+}
+
+.bloco p {
+    font-size: 1rem;
+    color: var(--cor-texto-preto);
+    margin-bottom: 10px;
+}
+
+.bloco h2 {
+    font-size: 1.5rem;
+    color: var(--cor-texto-preto);
+    margin-bottom: 10px;
+}
+
+/* Estilos Específicos para Cada Bloco */
+.total-vendas, .qtd-vendas, .mais-pedido, .tempo-medio {
+    background-color: var(--cor-fundo-conteudos_branco);
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 130px;
+    margin-bottom: 15px;
+}
+
+.bloco.mais-pedido img{
+    width: 6rem;
+    border-radius: 100px;
+}
+
+.mais-pedido p:last-child {
+    font-size: 1rem;
+    color: var(--cor-texto-preto);
+}
+
+
+
+
+/* Estilo do Histórico de Pedidos */
+
+.historico-pedidos {
+    background-color: var(--cor-fundo-conteudos_branco);
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.historico-pedidos h2 {
+    color: var(--cor-texto-preto);
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.linha-horizontal{
+    border-top: 2px solid var(--cor-fundo);
+    width: 100%;
+    margin: 20px 0px 20px 0px;
+}
+
+.historico-pedidos p {
+    color: var(--cor-texto-preto);
+    font-size: 12px;
+    margin: 3px;
+}
+
+.icon-filtro{
+    color: var(--cor-botao-fundo_preto);
+}
+
+.pedido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 0;
+}
+
+.pedido-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.pedido-info img {
+    width: 40px;
+    height: 40px;
+}
+
+.pedido-info div {
+    flex-direction: column;
+}
+
+.pedido-status {
+    font-size: 1rem;
+    font-weight: bold;
+    width: 120px;
+    text-align: center;
+}
+
+.icon-seta-pedido{
+    color: var(--cor-botao-fundo_vermelho);
+}
+
+.icon-editar-perfil{
+    color: var(--cor-botao-fundo_branco);
+    background-color: var(--cor-botao-fundo_preto);
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 8px rgb(255, 255, 255);
+}
+
+.pedido-status.finalizado {
+    color: green;
+}
+
+.pedido-status.andamento {
+    color: blue;
+}
+
+.pedido-status.cancelado {
+    color: red;
+}
+
+.pedido-valor p {
+    text-align: center;
+    margin: 0;
+    font-size: 1.2rem;
+    color: green;
+    font-weight: bold;
+}
+
+.pedido-valor p:last-child {
+    color: red;
+    font-size: 1rem;
+}
+
+/* ================= FIM - CONFIGURAÇÕES INDIVIDUAIS DA TELA VENDAS ================= */
+
+
+/* ================= CONFIGURAÇÕES INDIVIDUAIS DA TELA PRODUTOS ================= */
+
+body.produtos {
+    color: var(--cor-texto-branco); /* Cor de texto branca */
+    background-image: var(--imagem-fundo-telas-conteudos-2); /* Usando a variável da imagem de fundo para a tela inicial */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* Estilo da Lista de Produtos */
+
+.bloco-produtos {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.bloco-produtos h2 {
+    color: var(--cor-texto-preto);
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.bloco-produtos p {
+    color: var(--cor-texto-preto);
+}
+
+.produto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 0;
+}
+
+.produto-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.produto-info img {
+    width: 50px;
+    height: 50px;
+    padding: 3px;
+}
+
+.produto-info div {
+    display: flex;
+    flex-direction: column;
+}
+
+.produto-info p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.produto-info .preco {
+    color: var(--cor-texto-verde);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.produto-status {
+    padding: 3px 10px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    width: 100px;
+}
+
+.produto-status.ativo {
+    background-color: #d1f7c4;
+    color: var(--cor-texto-verde);
+}
+
+.produto-status.inativo {
+    background-color: #f7d4d4;
+    color: var(--cor-texto-vermelho);
+}
+
+
+/* Estilo dos Contadores de Produtos */
+
+.contadores-produtos {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.bloco-contador {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bloco-contador p {
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.bloco-contador h2 {
+    font-size: 2rem;
+    color: black;
+}
+
+/* ================= FIM - CONFIGURAÇÕES INDIVIDUAIS DA TELA PRODUTOS ================= */
+
+
+
+/* ================= CONFIGURAÇÕES INDIVIDUAIS DA TELA CAMPANHAS ================= */
+
+body.campanhas {
+    color: var(--cor-texto-branco); /* Cor de texto branca */
+    background-image: var(--imagem-fundo-telas-conteudos-2); /* Usando a variável da imagem de fundo para a tela inicial */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Estilo do Histórico de Campanhas */
+
+.bloco-campanhas {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    height: 60%;
+    padding: 20px;
+}
+
+.bloco-campanhas h2 {
+    color: var(--cor-texto-preto);
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.bloco-campanhas p {
+    color: var(--cor-texto-preto);
+    font-size: 12px;
+    margin: 3px;
+}
+
+
+.campanha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 0;
+}
+
+.campanha-info {
+    text-align: left;
+}
+
+.campanha-info p {
+    margin: 0;
+}
+
+.campanha-valor {
+    text-align: center;
+}
+
+.campanha-valor p {
+    margin: 0;
+    font-size: 15px;
+    color: var(--cor-texto-verde);
+    font-weight: bold;
+}
+
+.campanha-status {
+    padding: 3px 10px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    width: 100px;
+}
+
+.campanha-status.ativa {
+    background-color: #d1f7c4;
+    color: var(--cor-texto-verde);
+}
+
+.campanha-status.pausada {
+    background-color: #d4e8f7;
+    color: var(--cor-texto-azul);
+}
+
+.campanha-status.inativa {
+    background-color: #f7d4d4;
+    color: var(--cor-texto-vermelho);
+}
+
+
+/* Estilo dos Contadores de Campanhas */
+.contadores-campanhas {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.bloco-contador {
+    background-color: var(--cor-fundo-conteudos_branco);
+    border-radius: 20px;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bloco-contador p {
+    font-size: 1rem;
+    color: var(--cor-texto-preto);
+    margin-bottom: 10px;
+}
+
+.bloco-contador h2 {
+    font-size: 2rem;
+    color: var(--cor-texto-preto);
+}
+
+/* ================= FIM - CONFIGURAÇÕES INDIVIDUAIS DA TELA CAMPANHAS ================= */
+
+
+
+/* ================= CONFIGURAÇÕES INDIVIDUAIS DA TELA PERFIL ================= */
+
+body.perfil {
+    color: var(--cor-texto-branco); /* Cor de texto branca */
+    background-image: var(--imagem-fundo-telas-conteudos-2); /* Usando a variável da imagem de fundo para a tela inicial */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Estilos para o Perfil com Imagem e Botão de Alteração */
+
+.perfil-imagem {
+    text-align: center;
+    color: white;
+    margin: 20px 0;
+}
+
+.imagem-perfil-container {
+    position: relative;
+    display: inline-block;
+}
+
+.imagem-perfil {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.botao-alterar-imagem {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.botao-alterar-imagem img {
+    width: 30px;
+    height: 30px;
+}
+
+.nome-perfil {
+    background-color: rgb(0, 0, 0);
+    margin-top: 10px;
+    font-size: 1.8rem;
+    color: var(--cor-texto-branco);
+    font-weight: bold;
+    border-radius: 50px;
+    width: 400px;
+}
+
+
+/* Estilo das Configurações de Perfil */
+.perfil-configuracoes {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    margin: 20px auto;
+}
+
+.opcao-perfil {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.opcao-perfil:last-child {
+    border-bottom: none;
+}
+
+.opcao-perfil img {
+    width: 30px;
+    height: 30px;
+}
+
+.opcao-perfil p {
+    flex-grow: 1;
+    margin-left: 15px;
+    font-size: 1.1rem;
+    color: var(--cor-texto-preto);
+}
+
+/* ================= FIM - CONFIGURAÇÕES INDIVIDUAIS DA TELA PERFIL ================= */
+
+
