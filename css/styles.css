@@ -6,7 +6,7 @@
     /* Cores do Site */
         /* Cores dos Conteúdos */
             /* Cores */
-            --cor-fundo: #d60000; /* Vermelho iFood */
+            --cor-fundo: #8c52ff; /* Vermelho iFood */
             /* Imagens */
             --imagem-fundo-capa: url('../img/Fundo_Capa.png');
             --imagem-fundo_telas_iniciais: url('../img/Fundo_TelasIniciais.png');
@@ -25,24 +25,24 @@
             /* Cores dos Botôes */
             --cor-botao-fundo_cinza_claro: #e5e5e5; /* Fundo cinza claro dos botões */
             --cor-botao-fundo_branco: white; /* Fundo cinza claro dos botões */
-            --cor-botao-fundo_vermelho: #ff0000; /* Fundo cinza claro dos botões */
+            --cor-botao-fundo_vermelho: #8c52ff; /* Fundo cinza claro dos botões */
             --cor-botao-fundo_azul_claro: #5699FE; /* Fundo cinza claro dos botões */
             --cor-botao-fundo_verde_claro: #00A811; /* Fundo cinza claro dos botões */
             --cor-botao-fundo_preto: black; /* Fundo cinza claro dos botões */
 
             --cor-botao-texto_preto: black; /* Texto preto dos botões */
             --cor-botao-texto_branco: white; /* Texto preto dos botões */
-            --cor-botao-texto_vermelho: #d60000; /* Texto preto dos botões */ 
+            --cor-botao-texto_vermelho: #8c52ff; /* Texto preto dos botões */ 
 
             --cor-botao-hover_cinza_escuro: #b3b3b3; /* Cor de fundo dos botões ao passar o mouse */
-            --cor-botao-hover_vermelho_escuro: #970000; /* Cor de fundo dos botões ao passar o mouse */
+            --cor-botao-hover_vermelho_escuro: #3701a2; /* Cor de fundo dos botões ao passar o mouse */
             --cor-botao-hover_azul_escuro: #0059AB; /* Cor de fundo dos botões ao passar o mouse */
             --cor-botao-hover_verde_escuro: #1C5900; /* Cor de fundo dos botões ao passar o mouse */
             /* FIM - Cores dos Botôes */
             
             /* Cores dos Conteúdos */
             --cor-fundo-conteudos_branco: white; /* Cor de fundo de alguns conteudos nas telas */
-            --cor-fundo-conteudos_vermelho: #d60000; /* Cor de fundo de alguns conteudos nas telas */
+            --cor-fundo-conteudos_vermelho: #8c52ff; /* Cor de fundo de alguns conteudos nas telas */
             --cor-fundo-conteudos_preto: black; /* Cor de fundo de alguns conteudos nas telas */
             --cor-fundo-conteudos_vermelho_claro:  rgba(255, 0, 0, 0.1);
 
@@ -68,9 +68,9 @@
             --cor-fundo-menu: white; /* Fundo do menu lateral */
 
             /* Cores Fundo Botão */
-            --cor-fundo-item-selecionado: #d60000; /* Fundo do item ativo no menu */
+            --cor-fundo-item-selecionado: #8c52ff; /* Fundo do item ativo no menu */
             --cor-fundo-item-nao-seleciona: white; /* Fundo do item ativo no menu */
-            --cor-hover-fundo-item-nao-selecionado: rgb(250, 225, 225); /* Fundo do item ativo no menu */           
+            --cor-hover-fundo-item-nao-selecionado: rgb(237, 225, 250); /* Fundo do item ativo no menu */           
 
             /* Cores dos Textos */
             --cor-texto-item-selecionado: white; /* Texto do item ativo no menu */
