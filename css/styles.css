@@ -409,6 +409,7 @@ body.inicio {
 .bloco-saldo {
     color: var(--cor-texto-branco);
     background-color: var(--cor-fundo-conteudos_vermelho);
+    box-shadow: 0px 0px 20px 5px #00000060;
     text-align: center;
 }
 
@@ -545,7 +546,6 @@ body.vendas {
     display: flex;
     gap: 15px;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 .bloco {
@@ -568,25 +568,13 @@ body.vendas {
 }
 
 /* Estilos Específicos para Cada Bloco */
-.total-vendas, .qtd-vendas, .mais-pedido, .tempo-medio {
+.total-vendas, .qtd-vendas, .tempo-medio {
     background-color: var(--cor-fundo-conteudos_branco);
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    height: 130px;
+    height: 100px;
     margin-bottom: 15px;
 }
-
-.bloco.mais-pedido img{
-    width: 6rem;
-    border-radius: 100px;
-}
-
-.mais-pedido p:last-child {
-    font-size: 1rem;
-    color: var(--cor-texto-preto);
-}
-
-
 
 
 /* Estilo do Histórico de Pedidos */
@@ -710,7 +698,7 @@ body.produtos {
 .bloco-produtos {
     background-color: white;
     border-radius: 20px;
-    padding: 20px;
+    padding: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
 }
@@ -787,7 +775,6 @@ body.produtos {
 .contadores-produtos {
     display: flex;
     justify-content: space-between;
-    margin: 20px 0;
 }
 
 .bloco-contador {
@@ -795,6 +782,7 @@ body.produtos {
     border-radius: 20px;
     padding: 20px;
     width: 30%;
+    height: 100px;
     text-align: center;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -831,7 +819,7 @@ body.campanhas {
     background-color: white;
     border-radius: 20px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
+    margin-top: 10px;
     height: 60%;
     padding: 20px;
 }
@@ -906,7 +894,7 @@ body.campanhas {
 .contadores-campanhas {
     display: flex;
     justify-content: space-between;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .bloco-contador {
