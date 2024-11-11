@@ -19,16 +19,6 @@
             <!-- Título da página de registro -->
             <h3>REGISTRE-SE</h3>
 
-            <!-- Abas de navegação (Dados Pessoais e Dados da Empresa) -->
-            <ul class="nav nav-tabs justify-content-center" id="registroAbas">
-                <li class="nav-item">
-                    <a class="nav-link active" id="dadosPessoaisTab" href="#dadosPessoais" data-bs-toggle="tab">Dados Pessoais</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="dadosEmpresaTab" href="#dadosEmpresa" data-bs-toggle="tab">Dados da Empresa</a>
-                </li>
-            </ul>
-
             <!-- Conteúdo das abas -->
             <div class="tab-content">
                 <!-- Aba Dados Pessoais -->
@@ -36,17 +26,17 @@
                     <form id="formDadosPessoais">
                         <!-- Campo de entrada para o nome -->
                         <div class="form-group">
-                            <input type="text" class="form-control campo-entrada" placeholder="Nome">
+                            <input type="text" class="form-control campo-entrada" placeholder="Nome Completo">
                         </div>
 
                         <!-- Campo de entrada para o sobrenome -->
                         <div class="form-group">
-                            <input type="text" class="form-control campo-entrada" placeholder="Sobrenome">
+                            <input type="text" class="form-control campo-entrada" placeholder="E-mail">
                         </div>
 
                         <!-- Campo de entrada para o e-mail -->
                         <div class="form-group">
-                            <input type="email" class="form-control campo-entrada" placeholder="E-mail">
+                            <input type="date" class="form-control campo-entrada" placeholder="Data de Nascimento">
                         </div>
 
                         <!-- Campo de entrada para a senha -->
@@ -57,55 +47,10 @@
                         <!-- Botão Próximo -->
                         <div class="d-flex justify-content-between">
                             <a href="index.html" class="btn btn-custom voltar">Voltar</a>
-                            <button type="button" class="btn btn-custom proximo" id="proximoDadosPessoais">Próximo</button>
+                            <a href="tela_inicio.html" class="btn btn-custom registrar">Registrar</a>
                         </div>
                     </form>
                 </div>
-
-                <!-- Aba Dados da Empresa -->
-                <div class="tab-pane fade" id="dadosEmpresa">
-                    <form id="formDadosEmpresa">
-                        <!-- Campo de entrada para Nome Empresa -->
-                        <div class="form-group">
-                            <input type="text" class="form-control campo-entrada" placeholder="Nome Empresa">
-                        </div>
-
-                        <!-- Campo de entrada para Faturamento Mensal -->
-                        <div class="form-group">
-                            <input type="text" class="form-control campo-entrada" placeholder="Faturamento Mensal">
-                        </div>
-
-                        <!-- Campo de entrada para Endereço -->
-                        <div class="form-group">
-                            <input type="text" class="form-control campo-entrada" placeholder="Endereço">
-                        </div>
-
-                        <!-- Campo de entrada para Número e Complemento -->
-                        <div class="d-flex justify-content-between">
-                            <input type="text" class="form-control campo-entrada" placeholder="Número">
-                            <input type="text" class="form-control campo-entrada" placeholder="Complemento" style="margin-left: 10px;">
-                        </div>
-
-                        <!-- Campo de entrada para Bairro -->
-                        <div class="form-group">
-                            <input type="text" class="form-control campo-entrada" placeholder="Bairro">
-                        </div>
-
-                        <!-- Campo de entrada para Cidade -->
-                        <div class="form-group">
-                            <input type="text" class="form-control campo-entrada" placeholder="Cidade">
-                        </div>
-
-                        <!-- Campo de entrada para Estado -->
-                        <div class="form-group">
-                            <input type="text" class="form-control campo-entrada" placeholder="Estado">
-                        </div>
-
-                        <!-- Botões Voltar e Registrar -->
-                        <div class="d-flex justify-content-between">
-                            <button type="button" class="btn btn-custom voltar" id="voltarDadosEmpresa">Voltar</button>
-                            <a href="tela_inicio.html" class="btn btn-custom registrar">Registrar</a>
-                        </div>
                     </form>
                 </div>
             </div>
