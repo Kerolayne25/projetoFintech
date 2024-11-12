@@ -516,9 +516,11 @@ body.inicio {
 
 /* =================  FIM - CONFIGURAÇÕES INDIVIDUAIS DA TELA DE INICIO ================= */
 
-/* ================= CONFIGURAÇÕES INDIVIDUAIS DA TELA VENDAS ================= */
 
-body.vendas {
+
+/* ================= CONFIGURAÇÕES TELAS DE RECEITAS, DESPESAS E SONHOS ================= */
+
+body.fundo-telas2 {
     color: var(--cor-texto-branco); /* Cor de texto branca */
     background-image: var(--imagem-fundo-telas-conteudos-2); /* Usando a variável da imagem de fundo para a tela inicial */
     background-size: cover;
@@ -529,20 +531,20 @@ body.vendas {
 
 /* Estilo da Página de Vendas */
 
-.container-vendas {
+.container-telas {
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.header-vendas h1 {
+.titulo-telas h1 {
     color: var(--cor-texto-branco);
     font-size: 30px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.blocos-vendas {
+.blocos-resumo {
     display: flex;
     gap: 15px;
     justify-content: center;
@@ -553,42 +555,32 @@ body.vendas {
     padding: 20px 5px;
     width: 49%;
     height: 80%;
+    background-color: var(--cor-fundo-conteudos_branco);
+    color: var(--cor-texto-preto);
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
 }
 
 .bloco p {
     font-size: 1rem;
-    color: var(--cor-texto-preto);
-    margin-bottom: 10px;
 }
 
 .bloco h2 {
-    font-size: 1.5rem;
-    color: var(--cor-texto-preto);
-    margin-bottom: 10px;
+    font-size: 1.6rem;
 }
-
-/* Estilos Específicos para Cada Bloco */
-.total-vendas, .qtd-vendas, .tempo-medio {
-    background-color: var(--cor-fundo-conteudos_branco);
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    height: 100px;
-    margin-bottom: 15px;
-}
-
 
 /* Estilo do Histórico de Pedidos */
 
-.historico-pedidos {
+.historicos {
     background-color: var(--cor-fundo-conteudos_branco);
     width: 100%;
-    height: 100%;
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.historico-pedidos h2 {
+.historicos h2 {
     color: var(--cor-texto-preto);
     text-align: center;
     font-size: 20px;
@@ -601,7 +593,7 @@ body.vendas {
     margin: 20px 0px 20px 0px;
 }
 
-.historico-pedidos p {
+.historicos p {
     color: var(--cor-texto-preto);
     font-size: 12px;
     margin: 3px;
@@ -611,37 +603,55 @@ body.vendas {
     color: var(--cor-botao-fundo_preto);
 }
 
-.pedido {
+.itens {
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #e0e0e0;
-    padding: 10px 0;
+    padding: 10px 10px;
 }
 
-.pedido-info {
+.itens-info {
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
-.pedido-info img {
+.itens-info img {
     width: 40px;
     height: 40px;
 }
 
-.pedido-info div {
+.itens-info div {
     flex-direction: column;
 }
 
-.pedido-status {
+.itens-origem {
     font-size: 1rem;
-    font-weight: bold;
     width: 120px;
     text-align: center;
+    color: var(--cor-botao-texto_preto);
 }
 
-.icon-seta-pedido{
+.itens-tipo {
+    font-size: 1rem;
+    width: 120px;
+    text-align: center;
+    color: var(--cor-botao-texto_preto);
+}
+
+.itens-valor{
+    text-align: center;
+    font-size: 1rem;
+    color: green;
+    background-color: #d1f7c4;
+    padding: 5px 10px;
+    width: 150px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.itens-seta{
     color: var(--cor-botao-fundo_vermelho);
 }
 
@@ -651,31 +661,6 @@ body.vendas {
     padding: 10px;
     border-radius: 50px;
     box-shadow: 0px 4px 8px rgb(255, 255, 255);
-}
-
-.pedido-status.finalizado {
-    color: green;
-}
-
-.pedido-status.andamento {
-    color: blue;
-}
-
-.pedido-status.cancelado {
-    color: red;
-}
-
-.pedido-valor p {
-    text-align: center;
-    margin: 0;
-    font-size: 1.2rem;
-    color: green;
-    font-weight: bold;
-}
-
-.pedido-valor p:last-child {
-    color: red;
-    font-size: 1rem;
 }
 
 /* ================= FIM - CONFIGURAÇÕES INDIVIDUAIS DA TELA VENDAS ================= */
