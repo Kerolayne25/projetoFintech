@@ -15,7 +15,7 @@
     <!-- Importando Chart.js para gráficos -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
-<body class="produtos"> <!-- Classe login para reutilizar o fundo -->
+<body class="fundo-telas2"> <!-- Classe login para reutilizar o fundo -->
 
     <!-- Div Principal -->
     <div class="d-flex conteudo-principal-fundo">
@@ -56,91 +56,278 @@
         </div>
 
         <!-- Conteúdo principal -->
-
-        <!-- Lista de Produtos -->
-
-        <div class="header-vendas">
-            <h1>Despesas</h1>
+        <div class="container-telas">
+            <div class="titulo-telas">
+                <h1>Despesas</h1>
+            </div>
+            
+            <div class="blocos-resumo">
+                <div class="bloco d-flex flex-column">
+                    <p class="mb-2"><strong>Total de Despesas</strong></p>
+                    <h2 class="mb-0">R$ 8.521,50</h2>
+                </div>
+                <div class="bloco d-flex flex-column">
+                    <p class="mb-2"><strong>Total Pago</strong></p>
+                    <h2 class="mb-0">R$ 3.500,00</h2>
+                </div>
+                <div class="bloco d-flex flex-column">
+                    <p class="mb-2"><strong>Falta Pagar</strong></p>
+                    <h2 class="mb-0">R$ 5.021,50</h2>
+                </div>
+                <div class="bloco d-flex flex-column">
+                    <p class="mb-2"><strong>Quantidade</strong></p>
+                    <h2 class="mb-0">29</h2>
+                </div>
+            </div>
         </div>
 
-        <!-- Contadores de Produtos -->
-        <div class="contadores-produtos">
-            <div class="bloco-contador">
-                <p>Produtos</p>
-                <h2>500</h2>
+        <div class="historicos">
+            <div class="row align-items-center">
+                <h2 class="col mb-0 text-center">Despesas Lançadas</h2>
+                <i class="bi bi-funnel-fill col-auto fs-2 icon-filtro" style="cursor: pointer;"></i> <!-- Ícone de filtro -->
             </div>
-            <div class="bloco-contador">
-                <p>Ativos</p>
-                <h2>490</h2>
-            </div>
-            <div class="bloco-contador">
-                <p>Inativos</p>
-                <h2>10</h2>
-            </div>
-        </div>
-
-        <div class="bloco-produtos">
-            <h2>Despesas</h2>
             <div class="linha-horizontal"></div>
-            <div class="produto">
-                <div class="produto-info">
-                    <img src="../img/cerveja.jpg" alt="Produto 1">
-                    <div>
-                        <p><strong>Produto 1</strong></p>
-                        <p class="preco">R$ 8,00</p>
-                    </div>
-                </div>
-                <div class="produto-status ativo">Ativo</div>
-                <!-- Ícone de seta -->
-                <div class="icon-seta">
-                    <i class="bi bi-arrow-right-circle-fill fs-3 icon-seta-pedido" style="cursor: pointer;"></i> <!-- Ícone de seta -->
-                </div>
-            </div>
 
-            <div class="produto">
-                <div class="produto-info">
-                    <img src="../img/cerveja.jpg" alt="Produto 2">
+            <div class="itens">
+                <div class="itens-info">
+                    <img src="../img/Icones/Icon_Cifrao_Vermelho.png" alt="Despesa">
                     <div>
-                        <p><strong>Produto 2</strong></p>
-                        <p class="preco">R$ 8,00</p>
+                        <p><strong>Nº 61</strong></p>
+                        <p>Criado em: 10/11/2024 às 15:10</p>
+                        <p>Pago em: 10/11/2024 às 18:10</p>
                     </div>
                 </div>
-                <div class="produto-status ativo">Ativo</div>
-                <!-- Ícone de seta -->
-                <div class="icon-seta">
-                    <i class="bi bi-arrow-right-circle-fill fs-3 icon-seta-pedido" style="cursor: pointer;"></i> <!-- Ícone de seta -->
+                <div class="itens-origem">
+                    <p><strong>Aluguel</strong></p>
+                    <p>Mensal</p>
+                </div>
+                <div class="itens-valor">
+                    <p>Parcelas</p>
+                    <p>(0/0)</p>
+                </div>
+                <div class="itens-valor">
+                    <p>Despesa</p>
+                    <p class="itens-valor despesas">R$ 2.500,00</p>
+                </div>
+                <div class="itens-valor">
+                    <p>Paguei</p>
+                    <p class="itens-valor paguei">R$ 2.500,00</p>
+                </div>
+                <div class="itens-valor">
+                    <p>Status</p>
+                    <p class="itens-valor statusPago">Pago</p>
+                </div>
+                <div class="itens-seta">
+                    <i class="bi bi-arrow-right-circle-fill fs-3 icon-seta-pedido" style="cursor: pointer;"></i>
                 </div>
             </div>
-
-            <div class="produto">
-                <div class="produto-info">
-                    <img src="../img/cerveja.jpg" alt="Produto 3">
+            
+            <div class="itens">
+                <div class="itens-info">
+                    <img src="../img/Icones/Icon_Cifrao_Vermelho.png" alt="Despesa">
                     <div>
-                        <p><strong>Produto 3</strong></p>
-                        <p class="preco">R$ 8,00</p>
+                        <p><strong>Nº 60</strong></p>
+                        <p>Criado em: 08/11/2024 às 14:30</p>
+                        <p>Previsão de Pgto: 15/11/2024</p>
                     </div>
                 </div>
-                <div class="produto-status ativo">Ativo</div>
-                <!-- Ícone de seta -->
-                <div class="icon-seta">
-                    <i class="bi bi-arrow-right-circle-fill fs-3 icon-seta-pedido" style="cursor: pointer;"></i> <!-- Ícone de seta -->
+                <div class="itens-origem">
+                    <p><strong>Supermercado</strong></p>
+                    <p>Gasto Único</p>
+                </div>
+                <div class="itens-valor">
+                    <p>Parcelas</p>
+                    <p>(0/0)</p>
+                </div>
+                <div class="itens-valor">
+                    <p>Despesa</p>
+                    <p class="itens-valor despesas">R$ 600,00</p>
+                </div>
+                <div class="itens-valor">
+                    <p>Paguei</p>
+                    <p class="itens-valor paguei">R$ 500,00</p>
+                </div>
+                <div class="itens-valor">
+                    <p>Status</p>
+                    <p class="itens-valor statusEmAberto">Em Aberto</p>
+                </div>
+                <div class="itens-seta">
+                    <i class="bi bi-arrow-right-circle-fill fs-3 icon-seta-pedido" style="cursor: pointer;"></i>
                 </div>
             </div>
-
-            <div class="produto">
-                <div class="produto-info">
-                    <img src="../img/cerveja.jpg" alt="Produto 4">
+            
+            <div class="itens">
+                <div class="itens-info">
+                    <img src="../img/Icones/Icon_Cifrao_Vermelho.png" alt="Despesa">
                     <div>
-                        <p><strong>Produto 4</strong></p>
-                        <p class="preco">R$ 8,00</p>
+                        <p><strong>Nº 59</strong></p>
+                        <p>Criado em: 05/11/2024 às 17:45</p>
+                        <p>Pago em: 05/11/2024 às 17:45</p>
                     </div>
                 </div>
-                <div class="produto-status ativo">Ativo</div>
-                <!-- Ícone de seta -->
-                <div class="icon-seta">
-                    <i class="bi bi-arrow-right-circle-fill fs-3 icon-seta-pedido" style="cursor: pointer;"></i> <!-- Ícone de seta -->
+                <div class="itens-origem">
+                    <p><strong>Transporte</strong></p>
+                    <p>Mensal</p>
+                </div>
+                <div class="itens-valor">
+                    <p>Parcelas</p>
+                    <p>(0/0)</p>
+                </div>
+                <div class="itens-valor">
+                    <p>Despesa</p>
+                    <p class="itens-valor despesas">R$ 200,00</p>
+                </div>
+                <div class="itens-valor">
+                    <p>Paguei</p>
+                    <p class="itens-valor paguei">R$ 200,00</p>
+                </div>
+                <div class="itens-valor">
+                    <p>Status</p>
+                    <p class="itens-valor statusPago">Pago</p>
+                </div>
+                <div class="itens-seta">
+                    <i class="bi bi-arrow-right-circle-fill fs-3 icon-seta-pedido" style="cursor: pointer;"></i>
                 </div>
             </div>
+            
+            <div class="itens">
+                <div class="itens-info">
+                    <img src="../img/Icones/Icon_Cifrao_Vermelho.png" alt="Despesa">
+                    <div>
+                        <p><strong>Nº 58</strong></p>
+                        <p>Criado em: 03/11/2024 às 09:10</p>
+                        <p>Pago em: 03/11/2024 às 09:10</p>
+                    </div>
+                </div>
+                <div class="itens-origem">
+                    <p><strong>Conta de Luz</strong></p>
+                    <p>Mensal</p>
+                </div>
+                <div class="itens-valor">
+                    <p>Parcelas</p>
+                    <p>(0/0)</p>
+                </div>
+                <div class="itens-valor">
+                    <p>Despesa</p>
+                    <p class="itens-valor despesas">R$ 250,00</p>
+                </div>
+                <div class="itens-valor">
+                    <p>Paguei</p>
+                    <p class="itens-valor paguei">R$ 250,00</p>
+                </div>
+                <div class="itens-valor">
+                    <p>Status</p>
+                    <p class="itens-valor statusPago">Pago</p>
+                </div>
+                <div class="itens-seta">
+                    <i class="bi bi-arrow-right-circle-fill fs-3 icon-seta-pedido" style="cursor: pointer;"></i>
+                </div>
+            </div>
+            
+            <div class="itens">
+                <div class="itens-info">
+                    <img src="../img/Icones/Icon_Cifrao_Vermelho.png" alt="Despesa">
+                    <div>
+                        <p><strong>Nº 57</strong></p>
+                        <p>Criado em: 28/10/2024 às 13:30</p>
+                        <p>Previsão de Pgto: 15/11/2024</p>
+                    </div>
+                </div>
+                <div class="itens-origem">
+                    <p><strong>Internet</strong></p>
+                    <p>Mensal</p>
+                </div>
+                <div class="itens-valor">
+                    <p>Parcelas</p>
+                    <p>(0/0)</p>
+                </div>
+                <div class="itens-valor">
+                    <p>Despesa</p>
+                    <p class="itens-valor despesas">R$ 120,00</p>
+                </div>
+                <div class="itens-valor">
+                    <p>Paguei</p>
+                    <p class="itens-valor paguei">R$ 100,00</p>
+                </div>
+                <div class="itens-valor">
+                    <p>Status</p>
+                    <p class="itens-valor statusEmAberto">Em Aberto</p>
+                </div>
+                <div class="itens-seta">
+                    <i class="bi bi-arrow-right-circle-fill fs-3 icon-seta-pedido" style="cursor: pointer;"></i>
+                </div>
+            </div>
+            
+            <div class="itens">
+                <div class="itens-info">
+                    <img src="../img/Icones/Icon_Cifrao_Vermelho.png" alt="Despesa">
+                    <div>
+                        <p><strong>Nº 56</strong></p>
+                        <p>Criado em: 25/10/2024 às 08:45</p>
+                        <p>Pago em: 25/10/2024</p>
+                    </div>
+                </div>
+                <div class="itens-origem">
+                    <p><strong>Plano de Saúde</strong></p>
+                    <p>Parcelado</p>
+                </div>
+                <div class="itens-valor">
+                    <p>Parcelas</p>
+                    <p>(2/3)</p>
+                </div>
+                <div class="itens-valor">
+                    <p>Despesa</p>
+                    <p class="itens-valor despesas">R$ 300,00</p>
+                </div>
+                <div class="itens-valor">
+                    <p>Paguei</p>
+                    <p class="itens-valor paguei">R$ 300,00</p>
+                </div>
+                <div class="itens-valor">
+                    <p>Status</p>
+                    <p class="itens-valor statusPago">Pago</p>
+                </div>
+                <div class="itens-seta">
+                    <i class="bi bi-arrow-right-circle-fill fs-3 icon-seta-pedido" style="cursor: pointer;"></i>
+                </div>
+            </div>
+            
+            <div class="itens">
+                <div class="itens-info">
+                    <img src="../img/Icones/Icon_Cifrao_Vermelho.png" alt="Despesa">
+                    <div>
+                        <p><strong>Nº 55</strong></p>
+                        <p>Criado em: 20/10/2024 às 18:20</p>
+                        <p>Pago em: 20/10/2024</p>
+                    </div>
+                </div>
+                <div class="itens-origem">
+                    <p><strong>Academia</strong></p>
+                    <p>Parcelado</p>
+                </div>
+                <div class="itens-valor">
+                    <p>Parcelas</p>
+                    <p>(1/6)</p>
+                </div>
+                <div class="itens-valor">
+                    <p>Despesa</p>
+                    <p class="itens-valor despesas">R$ 100,00</p>
+                </div>
+                <div class="itens-valor">
+                    <p>Paguei</p>
+                    <p class="itens-valor paguei">R$ 100,00</p>
+                </div>
+                <div class="itens-valor">
+                    <p>Status</p>
+                    <p class="itens-valor statusPago">Pago</p>
+                </div>
+                <div class="itens-seta">
+                    <i class="bi bi-arrow-right-circle-fill fs-3 icon-seta-pedido" style="cursor: pointer;"></i>
+                </div>
+            </div>
+            
+            
+            
         </div>
     </div>
 

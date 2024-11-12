@@ -642,14 +642,61 @@ body.fundo-telas2 {
 
 .itens-valor{
     text-align: center;
-    font-size: 1rem;
-    color: green;
-    background-color: #d1f7c4;
-    padding: 5px 10px;
-    width: 150px;
+    font-size: 12px;
     border-radius: 20px;
     font-weight: bold;
+    padding: 5px 10px;
 }
+
+/* Configurações especificas Tela Receitas */
+.itens-valor.receitas{
+    width: 150px;
+    color: green;
+    background-color: #d1f7c4;
+}
+/* FIM - Configurações especificas Tela Receitas */
+
+/* Configurações especificas Tela Despesas */
+.itens-valor.despesas{
+    width: 130px;
+    font-size: 14px;
+    color: rgb(140, 0, 0);
+    background-color: #fdd0d0;
+}
+
+.itens-valor.paguei{
+    width: 130px;
+    font-size: 14px;
+    color: rgb(38, 0, 128);
+    background-color: #dadfff;
+}
+
+.itens-valor.statusPago{
+    width: 130px;
+    font-size: 14px;
+    color: green;
+    background-color: #d1f7c4;
+}
+
+.itens-valor.statusEmAberto{
+    width: 130px;
+    font-size: 14px;
+    color: rgb(100, 88, 0);
+    background-color: #fdf8bb;
+}
+
+/* FIM - Configurações especificas Tela Despesas */
+
+/* Configurações especificas Tela Sonhos */
+
+.itens-nomeSonho{
+    font-size: 14px;
+    width: 120px;
+    text-align: center;
+    color: var(--cor-botao-texto_preto);
+}
+
+/* FIM - Configurações especificas Tela Sonhos */
 
 .itens-seta{
     color: var(--cor-botao-fundo_vermelho);
@@ -664,246 +711,6 @@ body.fundo-telas2 {
 }
 
 /* ================= FIM - CONFIGURAÇÕES INDIVIDUAIS DA TELA VENDAS ================= */
-
-
-/* ================= CONFIGURAÇÕES INDIVIDUAIS DA TELA PRODUTOS ================= */
-
-body.produtos {
-    color: var(--cor-texto-branco); /* Cor de texto branca */
-    background-image: var(--imagem-fundo-telas-conteudos-2); /* Usando a variável da imagem de fundo para a tela inicial */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-
-/* Estilo da Lista de Produtos */
-
-.bloco-produtos {
-    background-color: white;
-    border-radius: 20px;
-    padding: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-}
-
-.bloco-produtos h2 {
-    color: var(--cor-texto-preto);
-    text-align: center;
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-.bloco-produtos p {
-    color: var(--cor-texto-preto);
-}
-
-.produto {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #e0e0e0;
-    padding: 10px 0;
-}
-
-.produto-info {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.produto-info img {
-    width: 50px;
-    height: 50px;
-    padding: 3px;
-}
-
-.produto-info div {
-    display: flex;
-    flex-direction: column;
-}
-
-.produto-info p {
-    margin: 0;
-    font-size: 1rem;
-}
-
-.produto-info .preco {
-    color: var(--cor-texto-verde);
-    font-size: 15px;
-    font-weight: bold;
-}
-
-.produto-status {
-    padding: 3px 10px;
-    border-radius: 20px;
-    text-align: center;
-    font-size: 0.9rem;
-    font-weight: bold;
-    width: 100px;
-}
-
-.produto-status.ativo {
-    background-color: #d1f7c4;
-    color: var(--cor-texto-verde);
-}
-
-.produto-status.inativo {
-    background-color: #f7d4d4;
-    color: var(--cor-texto-vermelho);
-}
-
-
-/* Estilo dos Contadores de Produtos */
-
-.contadores-produtos {
-    display: flex;
-    justify-content: space-between;
-}
-
-.bloco-contador {
-    background-color: white;
-    border-radius: 20px;
-    padding: 20px;
-    width: 30%;
-    height: 100px;
-    text-align: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.bloco-contador p {
-    font-size: 1rem;
-    color: black;
-    margin-bottom: 10px;
-}
-
-.bloco-contador h2 {
-    font-size: 2rem;
-    color: black;
-}
-
-/* ================= FIM - CONFIGURAÇÕES INDIVIDUAIS DA TELA PRODUTOS ================= */
-
-
-
-/* ================= CONFIGURAÇÕES INDIVIDUAIS DA TELA CAMPANHAS ================= */
-
-body.campanhas {
-    color: var(--cor-texto-branco); /* Cor de texto branca */
-    background-image: var(--imagem-fundo-telas-conteudos-2); /* Usando a variável da imagem de fundo para a tela inicial */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-/* Estilo do Histórico de Campanhas */
-
-.bloco-campanhas {
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 10px;
-    height: 60%;
-    padding: 20px;
-}
-
-.bloco-campanhas h2 {
-    color: var(--cor-texto-preto);
-    text-align: center;
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-.bloco-campanhas p {
-    color: var(--cor-texto-preto);
-    font-size: 12px;
-    margin: 3px;
-}
-
-
-.campanha {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #e0e0e0;
-    padding: 10px 0;
-}
-
-.campanha-info {
-    text-align: left;
-}
-
-.campanha-info p {
-    margin: 0;
-}
-
-.campanha-valor {
-    text-align: center;
-}
-
-.campanha-valor p {
-    margin: 0;
-    font-size: 15px;
-    color: var(--cor-texto-verde);
-    font-weight: bold;
-}
-
-.campanha-status {
-    padding: 3px 10px;
-    border-radius: 20px;
-    text-align: center;
-    font-size: 0.9rem;
-    font-weight: bold;
-    width: 100px;
-}
-
-.campanha-status.ativa {
-    background-color: #d1f7c4;
-    color: var(--cor-texto-verde);
-}
-
-.campanha-status.pausada {
-    background-color: #d4e8f7;
-    color: var(--cor-texto-azul);
-}
-
-.campanha-status.inativa {
-    background-color: #f7d4d4;
-    color: var(--cor-texto-vermelho);
-}
-
-
-/* Estilo dos Contadores de Campanhas */
-.contadores-campanhas {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 0;
-}
-
-.bloco-contador {
-    background-color: var(--cor-fundo-conteudos_branco);
-    border-radius: 20px;
-    padding: 20px;
-    width: 30%;
-    text-align: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.bloco-contador p {
-    font-size: 1rem;
-    color: var(--cor-texto-preto);
-    margin-bottom: 10px;
-}
-
-.bloco-contador h2 {
-    font-size: 2rem;
-    color: var(--cor-texto-preto);
-}
-
-/* ================= FIM - CONFIGURAÇÕES INDIVIDUAIS DA TELA CAMPANHAS ================= */
-
 
 
 /* ================= CONFIGURAÇÕES INDIVIDUAIS DA TELA PERFIL ================= */

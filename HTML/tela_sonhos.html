@@ -15,7 +15,7 @@
     <!-- Importando Chart.js para gráficos -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
-<body class="campanhas"> <!-- Classe login para reutilizar o fundo -->
+<body class="fundo-telas2"> <!-- Classe login para reutilizar o fundo -->
 
     <!-- Div Principal -->
     <div class="d-flex conteudo-principal-fundo">
@@ -56,95 +56,155 @@
         </div>
 
         <!-- Conteúdo principal -->
-        <!-- Histórico de Campanhas -->
-
-        <div class="header-vendas">
-            <h1>Sonhos</h1>
-        </div>
-
-        <!-- Contadores de Campanhas -->
-        <div class="contadores-campanhas">
-            <div class="bloco-contador">
-                <p>Ativas</p>
-                <h2>2</h2>
+        <div class="container-telas">
+            <div class="titulo-telas">
+                <h1>Sonhos</h1>
             </div>
-            <div class="bloco-contador">
-                <p>Pausadas</p>
-                <h2>1</h2>
-            </div>
-            <div class="bloco-contador">
-                <p>Inativas</p>
-                <h2>15</h2>
-            </div>
-        </div>
-
-        <div class="bloco-campanhas">
-            <h2>Sonhos á Realizar</h2>
-            <div class="linha-horizontal"></div>
             
-            <div class="campanha">
-                <div class="campanha-info">
-                    <p><strong>Campanha 1</strong></p>
-                    <p>Início em 17/06/2024 às 08:00</p>
-                    <p>Finalizado em 17/06/2024 às 18:00</p>
+            <div class="blocos-resumo">
+                <div class="bloco d-flex flex-column">
+                    <p class="mb-2"><strong>Quantidade</strong></p>
+                    <h2 class="mb-0">7</h2>
                 </div>
-                <div class="campanha-valor">
-                    <p>R$ 378,00</p>
-                    <div class="campanha-status ativa">Ativa</div>
+                <div class="bloco d-flex flex-column">
+                    <p class="mb-2"><strong>Valor Atingido</strong></p>
+                    <h2 class="mb-0">R$ 10.512,85</h2>
                 </div>
-                <!-- Ícone de seta -->
-                <div class="icon-seta">
-                    <i class="bi bi-arrow-right-circle-fill fs-3 icon-seta-pedido" style="cursor: pointer;"></i> <!-- Ícone de seta -->
+                <div class="bloco d-flex flex-column">
+                    <p class="mb-2"><strong>Meta</strong></p>
+                    <h2 class="mb-0">R$ 30.000,00</h2>
+                </div>
+                <div class="bloco d-flex flex-column">
+                    <p class="mb-2"><strong>% Atingido</strong></p>
+                    <h2 class="mb-0">33%</h2>
                 </div>
             </div>
+        </div>
 
-            <div class="campanha">
-                <div class="campanha-info">
-                    <p><strong>Campanha Junina</strong></p>
-                    <p>Criado em 17/06/2024 às 18:10</p>
-                    <p>Concluído em 17/06/2024 às 18:34</p>
-                </div>
-                <div class="campanha-valor">
-                    <p>R$ 49,99</p>
-                    <div class="campanha-status pausada">Pausada</div>
-                </div>
-                <!-- Ícone de seta -->
-                <div class="icon-seta">
-                    <i class="bi bi-arrow-right-circle-fill fs-3 icon-seta-pedido" style="cursor: pointer;"></i> <!-- Ícone de seta -->
-                </div>
+        <div class="historicos">
+            <div class="row align-items-center">
+                <h2 class="col mb-0 text-center">Sonhos</h2>
+                <i class="bi bi-funnel-fill col-auto fs-2 icon-filtro" style="cursor: pointer;"></i> <!-- Ícone de filtro -->
             </div>
+            <div class="linha-horizontal"></div>
 
-            <div class="campanha">
-                <div class="campanha-info">
-                    <p><strong>Campanha Mês</strong></p>
-                    <p>Criado em 17/06/2024 às 18:10</p>
-                    <p>Concluído em 17/06/2024 às 18:34</p>
+            <div class="itens">
+                <div class="itens-info">
+                    <img src="../img/Icones/Icon_Cifrao_Amarelo.png" alt="Sonho">
+                    <div>
+                        <p><strong>Nº 30</strong></p>
+                        <p>Criado em: 12/11/2024</p>
+                        <p>Data Final: 12/11/2025</p>
+                    </div>
                 </div>
-                <div class="campanha-valor">
-                    <p>R$ 105,40</p>
-                    <div class="campanha-status ativa">Ativa</div>
+                <div class="itens-nomeSonho">
+                    <strong>Carro Novo</strong>
                 </div>
-                <!-- Ícone de seta -->
-                <div class="icon-seta">
-                    <i class="bi bi-arrow-right-circle-fill fs-3 icon-seta-pedido" style="cursor: pointer;"></i> <!-- Ícone de seta -->
+                <div class="itens-valor">
+                    <p>Meta</p>
+                    <p class="itens-valor despesas">R$ 50.000,00</p>
+                </div>
+                <div class="itens-valor">
+                    <p>Guardado</p>
+                    <p class="itens-valor paguei">R$ 20.000,00</p>
+                </div>
+                <div class="itens-valor">
+                    <p>% Atingido</p>
+                    <p class="itens-valor statusPago">40%</p>
+                </div>
+                <div class="itens-seta">
+                    <i class="bi bi-arrow-right-circle-fill fs-3 icon-seta-pedido" style="cursor: pointer;"></i>
                 </div>
             </div>
+            
+            <div class="itens">
+                <div class="itens-info">
+                    <img src="../img/Icones/Icon_Cifrao_Amarelo.png" alt="Sonho">
+                    <div>
+                        <p><strong>Nº 31</strong></p>
+                        <p>Criado em: 05/10/2024</p>
+                        <p>Data Final: 05/10/2026</p>
+                    </div>
+                </div>
+                <div class="itens-nomeSonho">
+                    <strong>Viagem para Europa</strong>
+                </div>
+                <div class="itens-valor">
+                    <p>Meta</p>
+                    <p class="itens-valor despesas">R$ 25.000,00</p>
+                </div>
+                <div class="itens-valor">
+                    <p>Guardado</p>
+                    <p class="itens-valor paguei">R$ 7.500,00</p>
+                </div>
+                <div class="itens-valor">
+                    <p>% Atingido</p>
+                    <p class="itens-valor statusPago">30%</p>
+                </div>
+                <div class="itens-seta">
+                    <i class="bi bi-arrow-right-circle-fill fs-3 icon-seta-pedido" style="cursor: pointer;"></i>
+                </div>
+            </div>
+            
+            <div class="itens">
+                <div class="itens-info">
+                    <img src="../img/Icones/Icon_Cifrao_Amarelo.png" alt="Sonho">
+                    <div>
+                        <p><strong>Nº 32</strong></p>
+                        <p>Criado em: 15/09/2024</p>
+                        <p>Data Final: 15/09/2029</p>
+                    </div>
+                </div>
+                <div class="itens-nomeSonho">
+                    <strong>Educação dos Filhos</strong>
+                </div>
+                <div class="itens-valor">
+                    <p>Meta</p>
+                    <p class="itens-valor despesas">R$ 150.000,00</p>
+                </div>
+                <div class="itens-valor">
+                    <p>Guardado</p>
+                    <p class="itens-valor paguei">R$ 60.000,00</p>
+                </div>
+                <div class="itens-valor">
+                    <p>% Atingido</p>
+                    <p class="itens-valor statusPago">40%</p>
+                </div>
+                <div class="itens-seta">
+                    <i class="bi bi-arrow-right-circle-fill fs-3 icon-seta-pedido" style="cursor: pointer;"></i>
+                </div>
+            </div>
+            
+            <div class="itens">
+                <div class="itens-info">
+                    <img src="../img/Icones/Icon_Cifrao_Amarelo.png" alt="Sonho">
+                    <div>
+                        <p><strong>Nº 33</strong></p>
+                        <p>Criado em: 01/08/2024</p>
+                        <p>Data Final: 01/08/2028</p>
+                    </div>
+                </div>
+                <div class="itens-nomeSonho">
+                    <strong>Aposentadoria</strong>
+                </div>
+                <div class="itens-valor">
+                    <p>Meta</p>
+                    <p class="itens-valor despesas">R$ 500.000,00</p>
+                </div>
+                <div class="itens-valor">
+                    <p>Guardado</p>
+                    <p class="itens-valor paguei">R$ 150.000,00</p>
+                </div>
+                <div class="itens-valor">
+                    <p>% Atingido</p>
+                    <p class="itens-valor statusPago">30%</p>
+                </div>
+                <div class="itens-seta">
+                    <i class="bi bi-arrow-right-circle-fill fs-3 icon-seta-pedido" style="cursor: pointer;"></i>
+                </div>
+            </div>
+            
 
-            <div class="campanha">
-                <div class="campanha-info">
-                    <p><strong>Campanha Feriado</strong></p>
-                    <p>Criado em 17/06/2024 às 18:10</p>
-                    <p>Concluído em 17/06/2024 às 18:34</p>
-                </div>
-                <div class="campanha-valor">
-                    <p>R$ 54,90</p>
-                    <div class="campanha-status inativa">Inativa</div>
-                </div>
-                <!-- Ícone de seta -->
-                <div class="icon-seta">
-                    <i class="bi bi-arrow-right-circle-fill fs-3 icon-seta-pedido" style="cursor: pointer;"></i> <!-- Ícone de seta -->
-                </div>
-            </div>
         </div>
     </div>
 
