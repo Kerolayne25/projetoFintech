@@ -654,6 +654,7 @@ body.fundo-telas2 {
     color: green;
     background-color: #d1f7c4;
 }
+
 /* FIM - Configurações especificas Tela Receitas */
 
 /* Configurações especificas Tela Despesas */
@@ -708,6 +709,10 @@ body.fundo-telas2 {
     padding: 10px;
     border-radius: 50px;
     box-shadow: 0px 4px 8px rgb(255, 255, 255);
+}
+
+.formAddEditarItem{
+    color: var(--cor-botao-texto_preto);
 }
 
 /* ================= FIM - CONFIGURAÇÕES INDIVIDUAIS DA TELA VENDAS ================= */
