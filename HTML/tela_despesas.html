@@ -85,7 +85,7 @@
             <div class="row align-items-center">
                 <h2 class="col mb-0 text-center">Despesas Lançadas</h2>
                 <i class="bi bi-plus-circle-fill col-auto fs-2 icon-filtro" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#addExpenseModal" onclick="abrirAdicionarDespesa()"></i>
-                <i class="bi bi-funnel-fill col-auto fs-2 icon-filtro" style="cursor: pointer;"></i> <!-- Ícone de filtro -->
+                <i class="bi bi-funnel-fill col-auto fs-2 icon-filtro" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#filterExpenseModal"></i>
             </div>
             <div class="linha-horizontal"></div>
 
@@ -340,7 +340,7 @@
                 <div class="modal-body">
                     <form id="addExpenseForm">
                         <div class="mb-3">
-                            <label for="expenseDate" class="form-label">Data</label>
+                            <label for="expenseDate" class="form-label">Data da Criação</label>
                             <input type="date" id="expenseDate" class="form-control" required disabled>
                         </div>
                         
@@ -416,6 +416,103 @@
         </div>
     </div>
 
+    <!-- Modal para Filtro de Despesas -->
+    <div class="modal fade" id="filterExpenseModal" tabindex="-1" aria-labelledby="filterExpenseModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content formAddEditarItem">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="filterExpenseModalLabel">Filtrar Despesas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="filterExpenseForm">
+                        
+                        <!-- Campos para Data de Criação -->
+                        <div class="row">
+                            <div class="col mb-3">
+                                <label for="filterCreationStart" class="form-label">Data da Criação</label>
+                                <input type="date" id="filterCreationStart" class="form-control">
+                            </div>
+                            <div class="col mb-3">
+                                <label for="filterCreationEnd" class="form-label"></label>
+                                <input type="date" id="filterCreationEnd" class="form-control">
+                            </div>
+                        </div>
+                        
+                        <!-- Campos para Data de Previsão de Pagamento -->
+                        <div class="row">
+                            <div class="col mb-3">
+                                <label for="filterDueStart" class="form-label">Previsão de Pgto</label>
+                                <input type="date" id="filterDueStart" class="form-control">
+                            </div>
+                            <div class="col mb-3">
+                                <label for="filterDueEnd" class="form-label"></label>
+                                <input type="date" id="filterDueEnd" class="form-control">
+                            </div>
+                        </div>
+                        
+                        <!-- Campos para Data de Pagamento -->
+                        <div class="row">
+                            <div class="col mb-3">
+                                <label for="filterPaymentStart" class="form-label">Data de Pgto</label>
+                                <input type="date" id="filterPaymentStart" class="form-control">
+                            </div>
+                            <div class="col mb-3">
+                                <label for="filterPaymentEnd" class="form-label"></label>
+                                <input type="date" id="filterPaymentEnd" class="form-control">
+                            </div>
+                        </div>
+
+                        <!-- Campo para Código -->
+                        <div class="mb-3">
+                            <label for="filterCode" class="form-label">Código</label>
+                            <input type="text" id="filterCode" class="form-control" placeholder="Ex: 61">
+                        </div>
+
+                        <!-- Campo para Tipo -->
+                        <div class="mb-3">
+                            <label for="filterType" class="form-label">Tipo</label>
+                            <select id="filterType" class="form-select">
+                                <option value="">Selecione</option>
+                                <option value="gasto-unico">Gasto Único</option>
+                                <option value="mensal">Mensal</option>
+                                <option value="parcelado">Parcelado</option>
+                            </select>
+                        </div>
+
+                        <!-- Campo para Origem -->
+                        <div class="mb-3">
+                            <label for="filterOrigin" class="form-label">Origem</label>
+                            <select id="filterOrigin" class="form-select">
+                                <option value="">Selecione</option>
+                                <option value="academia">Academia</option>
+                                <option value="aluguel">Aluguel</option>
+                                <option value="internet">Internet</option>
+                                <option value="plano-saude">Plano de Saúde</option>
+                                <option value="supermercado">Supermercado</option>
+                                <option value="transporte">Transporte</option>
+                                <option value="luz">Conta de Luz</option>
+                            </select>
+                        </div>
+
+                        <!-- Campo para Status -->
+                        <div class="mb-3">
+                            <label for="filterStatus" class="form-label">Status</label>
+                            <select id="filterStatus" class="form-select">
+                                <option value="">Selecione</option>
+                                <option value="pago">Pago</option>
+                                <option value="em-aberto">Em Aberto</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" form="filterExpenseForm" class="btn btn-primary">Aplicar Filtros</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 

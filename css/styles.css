@@ -806,6 +806,23 @@ body.perfil {
     color: var(--cor-texto-preto);
 }
 
+.modal-titulos{
+    color: var(--cor-texto-preto);
+}
+
+.modal-footer button{
+    border-radius: 50px;
+    width: 130px;
+}
+
+.modal-footer button:last-child{
+    background-color: var(--cor-botao-fundo_vermelho);
+}
+
+.modal-footer button:last-child:hover{
+    background-color: var(--cor-botao-hover_vermelho_escuro);
+}
+
 /* ================= FIM - CONFIGURAÇÕES INDIVIDUAIS DA TELA PERFIL ================= */
 
 

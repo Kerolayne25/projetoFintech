@@ -1,31 +1,5 @@
 console.log('Arquivo actions.js carregado corretamente.');
 
-/* ================= CONFIGURAÇÕES INDIVIDUAIS DA TELA REGISTRAR ================= */
-
-// Verifica se o botão "proximoDadosPessoais" existe antes de adicionar o listener
-var botaoProximo = document.getElementById('proximoDadosPessoais');
-if (botaoProximo) {
-    botaoProximo.addEventListener('click', function () {
-        var dadosEmpresaTab = document.getElementById('dadosEmpresaTab');
-        if (dadosEmpresaTab) {
-            dadosEmpresaTab.click(); // Muda para a aba "Dados da Empresa"
-        }
-    });
-};
-
-// Verifica se o botão "voltarDadosEmpresa" existe antes de adicionar o listener
-var botaoVoltar = document.getElementById('voltarDadosEmpresa');
-if (botaoVoltar) {
-    botaoVoltar.addEventListener('click', function () {
-        var dadosPessoaisTab = document.getElementById('dadosPessoaisTab');
-        if (dadosPessoaisTab) {
-            dadosPessoaisTab.click(); // Volta para a aba "Dados Pessoais"
-        }
-    });
-};
-
-/* ================= FIM - CONFIGURAÇÕES INDIVIDUAIS DA TELA REGISTRAR ================= */
-
 
 /* ================= CONFIGURAÇÕES INDIVIDUAIS DA TELA INICIO ================= */
 // Data de Hoje
@@ -186,3 +160,71 @@ function abrirAdicionarSonho() {
 
 /* ================= FIM - CONFIGURAÇÕES INDIVIDUAIS DA TELA SONHOS ================= */
 
+
+/* ================= CONFIGURAÇÕES INDIVIDUAIS DA TELA PERFIL ================= */
+// Funções para abrir modais específicos na tela de Perfil
+
+// Editar Nome e Sobrenome
+function abrirEditarNome() {
+    const modalTitle = document.getElementById('editNameModalLabel');
+    if (modalTitle) {
+        modalTitle.textContent = "Editar Nome e Sobrenome";
+    }
+}
+
+// Editar E-mail
+function abrirEditarEmail() {
+    const modalTitle = document.getElementById('editEmailModalLabel');
+    if (modalTitle) {
+        modalTitle.textContent = "Editar E-mail";
+    }
+}
+
+// Alterar Senha com validação de confirmação
+function abrirAlterarSenha() {
+    const modalTitle = document.getElementById('changePasswordModalLabel');
+    if (modalTitle) {
+        modalTitle.textContent = "Alterar Senha";
+    }
+
+    const senhaForm = document.getElementById('changePasswordForm');
+    senhaForm.addEventListener('submit', function(event) {
+        const novaSenha = document.getElementById('newPasswordInput').value;
+        const confirmaSenha = document.getElementById('confirmPasswordInput').value;
+        const erroSenha = document.getElementById('passwordError');
+        
+        if (novaSenha !== confirmaSenha) {
+            event.preventDefault();
+            erroSenha.style.display = 'block';
+        } else {
+            erroSenha.style.display = 'none';
+        }
+    });
+}
+
+// Preferências de notificações
+function abrirPreferencias() {
+    const modalTitle = document.getElementById('preferencesModalLabel');
+    if (modalTitle) {
+        modalTitle.textContent = "Preferências";
+    }
+}
+
+// Logout com confirmação
+function abrirLogout() {
+    const modalTitle = document.getElementById('logoutModalLabel');
+    if (modalTitle) {
+        modalTitle.textContent = "Logout";
+    }
+}
+
+// Adiciona listeners para abrir os modais
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('.icon-edit-name').addEventListener('click', abrirEditarNome);
+    document.querySelector('.icon-edit-email').addEventListener('click', abrirEditarEmail);
+    document.querySelector('.icon-change-password').addEventListener('click', abrirAlterarSenha);
+    document.querySelector('.icon-preferences').addEventListener('click', abrirPreferencias);
+    document.querySelector('.icon-logout').addEventListener('click', abrirLogout);
+});
+
+/* ================= FIM - CONFIGURAÇÕES INDIVIDUAIS DA TELA PERFIL ================= */

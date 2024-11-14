@@ -84,18 +84,18 @@
                 <p class="mb-0 flex-grow-1r">Editar Nome e Sobrenome</p>
                 <!-- Ícone de seta -->
                 <div class="itens-seta">
-                    <i class="bi bi-arrow-right-circle-fill fs-3 " style="cursor: pointer;"></i> <!-- Ícone de seta -->
+                    <i class="bi bi-arrow-right-circle-fill fs-3 " style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#editNameModal"></i> <!-- Ícone de seta -->
                 </div>
             </div>
             <div class="opcao-perfil">
                 <!-- Ícone de seta -->
                 <div class="itens-seta">
-                    <i class="bi bi-envelope-fill fs-3 " style="cursor: pointer;"></i> <!-- Ícone de seta -->
+                    <i class="bi bi-envelope-fill fs-3 " style="cursor: pointer;" ></i> <!-- Ícone de seta -->
                 </div>
                 <p class="mb-0 flex-grow-1r">Editar E-mail</p>
                 <!-- Ícone de seta -->
                 <div class="itens-seta">
-                    <i class="bi bi-arrow-right-circle-fill fs-3 " style="cursor: pointer;"></i> <!-- Ícone de seta -->
+                    <i class="bi bi-arrow-right-circle-fill fs-3 " style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#editEmailModal"></i> <!-- Ícone de seta -->
                 </div>
             </div>
             <div class="opcao-perfil">
@@ -106,7 +106,7 @@
                 <p class="mb-0 flex-grow-1r">Alterar Senha</p>
                 <!-- Ícone de seta -->
                 <div class="itens-seta">
-                    <i class="bi bi-arrow-right-circle-fill fs-3" style="cursor: pointer;"></i> <!-- Ícone de seta -->
+                    <i class="bi bi-arrow-right-circle-fill fs-3" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#changePasswordModal"></i> <!-- Ícone de seta -->
                 </div>
             </div>
             <div class="opcao-perfil">
@@ -128,7 +128,7 @@
                 <p class="mb-0 flex-grow-1r">Preferências</p>
                 <!-- Ícone de seta -->
                 <div class="itens-seta">
-                    <i class="bi bi-arrow-right-circle-fill fs-3 " style="cursor: pointer;"></i> <!-- Ícone de seta -->
+                    <i class="bi bi-arrow-right-circle-fill fs-3 " style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#preferencesModal"></i> <!-- Ícone de seta -->
                 </div>
             </div>
             <div class="opcao-perfil">
@@ -139,12 +139,139 @@
                 <p class="mb-0 flex-grow-1r">Logout</p>
                 <!-- Ícone de seta -->
                 <div class="itens-seta">
-                    <i class="bi bi-arrow-right-circle-fill fs-3 " style="cursor: pointer;"></i> <!-- Ícone de seta -->
+                    <i class="bi bi-arrow-right-circle-fill fs-3 " style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#logoutModal"></i> <!-- Ícone de seta -->
                 </div>
             </div>
         </div>
+    </div>
 
+    <!-- Modal para Editar Nome e Sobrenome -->
+    <div class="modal fade" id="editNameModal" tabindex="-1" aria-labelledby="editNameModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content modal-titulos">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editNameModalLabel">Editar Nome e Sobrenome</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="editNameForm">
+                        <div class="mb-3">
+                            <label for="nameInput" class="form-label">Nome e Sobrenome</label>
+                            <input type="text" id="nameInput" class="form-control" placeholder="Digite o nome e sobrenome" required>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" form="editNameForm" class="btn btn-primary">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- Modal para Editar E-mail -->
+    <div class="modal fade" id="editEmailModal" tabindex="-1" aria-labelledby="editEmailModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content modal-titulos">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editEmailModalLabel">Editar E-mail</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="editEmailForm">
+                        <div class="mb-3">
+                            <label for="emailInput" class="form-label">E-mail</label>
+                            <input type="email" id="emailInput" class="form-control" placeholder="Digite o novo e-mail" required>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" form="editEmailForm" class="btn btn-primary">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para Alterar Senha -->
+    <div class="modal fade" id="changePasswordModal" tabindex="-1" aria-labelledby="changePasswordModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content modal-titulos">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="changePasswordModalLabel">Alterar Senha</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="changePasswordForm">
+                        <div class="mb-3">
+                            <label for="currentPasswordInput" class="form-label">Senha Atual</label>
+                            <input type="password" id="currentPasswordInput" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="newPasswordInput" class="form-label">Nova Senha</label>
+                            <input type="password" id="newPasswordInput" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="confirmPasswordInput" class="form-label">Confirme a Nova Senha</label>
+                            <input type="password" id="confirmPasswordInput" class="form-control" required>
+                        </div>
+                        <div class="text-danger" id="passwordError" style="display: none;">As senhas não coincidem!</div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" form="changePasswordForm" class="btn btn-primary">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para Preferências -->
+    <div class="modal fade" id="preferencesModal" tabindex="-1" aria-labelledby="preferencesModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content modal-titulos">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="preferencesModalLabel">Preferências</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="preferencesForm">
+                        <div class="mb-3">
+                            <label class="form-label">Receber Notificações?</label>
+                            <div>
+                                <input type="radio" id="notificationsYes" name="notifications" value="true">
+                                <label for="notificationsYes">Sim</label>
+                                <input type="radio" id="notificationsNo" name="notifications" value="false">
+                                <label for="notificationsNo">Não</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" form="preferencesForm" class="btn btn-primary">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para Logout -->
+    <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content modal-titulos">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="logoutModalLabel">Logout</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Certeza que quer deslogar do sistema?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Não</button>
+                    <button type="button" class="btn btn-primary" id="confirmLogoutButton">Sim</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Referenciando o arquivo JS personalizado -->
