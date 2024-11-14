@@ -820,6 +820,16 @@ body.perfil {
 }
 
 .modal-footer button:last-child:hover{
+    
+}
+
+.btnLogout{
+    border-radius: 50px;
+    width: 130px;
+    background-color: var(--cor-botao-fundo_vermelho);
+}
+
+.btnLogout:hover{
     background-color: var(--cor-botao-hover_vermelho_escuro);
 }
 
