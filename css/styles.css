@@ -820,7 +820,7 @@ body.perfil {
 }
 
 .modal-footer button:last-child:hover{
-    
+    background-color: var(--cor-botao-hover_vermelho_escuro);
 }
 
 .btnLogout{
